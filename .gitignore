@@ -153,6 +153,9 @@ dmypy.json
 cython_debug/
 data/
 .idea/
+*.safetensors
+*.bin
+__pycache__
 
 .DS_Store
 # PyCharm
