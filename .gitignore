@@ -156,8 +156,13 @@ data/
 *.safetensors
 *.bin
 __pycache__
-
+*.zip
+*.pt
+.vscode
 .DS_Store
+tex
+*.tex
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore

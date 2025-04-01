@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb,graphicx}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable}
+\usepackage{siunitx} % Для работы с единицами измерений
+\usepackage{caption}
+\usepackage{pdfpages}
+\usepackage[backend=biber, style=gost-numeric, sorting=none]{biblatex} % Используем biber
+\addbibresource{section/sources.bib} % Подключаем файл библиографии
+
+% Настройка полей документа
+\geometry{top=2cm, bottom=2cm, left=3cm, right=1.5cm}
+
+\renewcommand{\bibfont}{\small}
+\setlength{\bibitemsep}{0pt}
+\setlength{\biblabelsep}{1em}
+
+% Межстрочный интервал
+\onehalfspacing
+
+% Настройка заголовков
+\titleformat{\section}{\normalfont\fontsize{14pt}{16pt}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\fontsize{12pt}{14pt}\bfseries}{\thesubsection}{1em}{}
+
+\addto\captionsrussian{\renewcommand{\figurename}{Рисунок}}
+\captionsetup[figure]{labelsep=space} % Убираем точку после номера
+\renewcommand{\thefigure}{\arabic{figure} -} % Добавляем дефис
+
+% Разработка метода синтеза изображений для задач сегментации в анализе гранулометрических данных
+\begin{document}
+\include{uch_title}
+
+% \includepdf[pages=-]{Задание_ВКР_Усачева_Д.М..pdf}
+
+\newpage
+\addcontentsline{toc}{section}{Содержание}
+\tableofcontents
+\newpage
+\input{section/intro}
+\input{section/ch1.tex}
+\input{section/ch2.tex}
+\input{section/ch3.tex}
+
+%\section*{Приложения}
+\addcontentsline{toc}{section}{Список использованных источников}
+
+\addcontentsline{toc}{section}{Приложения}
+
+\section*{Список использованных источников}
+\printbibliography[heading=none]
+
+
+\end{document}
