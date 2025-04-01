@@ -1,0 +1,6 @@
+base_model_path: runwayml/stable-diffusion-v1-5
+vae_model_path: stabilityai/sd-vae-ft-mse
+image_encoder_path: models/image_encoder/
+ip_ckpt: ip_adapter.bin
+controlnet_path: 
+device: cuda
